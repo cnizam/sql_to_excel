@@ -5,9 +5,9 @@ The following operations are applied to the raw data in the created Excel Table:
 
 - The data type of the column is determined (integer, float, percentage, object, date) and appropriate formatting is done.
 - Title background and font are colored.
-- Sequential blue-white coloring is applied to increase line distinctiveness.
+- Sequential blue-white coloring is applied to differentiate rows.
 - Table border is added.
 - Column widths are adjusted automatically.
-- Output adjustment is made so that the table fits horizontally on a page.
+- Print adjustment is made so that the table fits landscape on a page.
 
 More than one sql query can be converted at once.
