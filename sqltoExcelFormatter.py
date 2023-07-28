@@ -51,7 +51,7 @@ for file in files_only:
                 _cell.number_format = '#,##0'
                 _cell.alignment = xl.styles.Alignment(wrap_text=True,vertical='center', horizontal='center') 
         elif data.iloc[:,col].dtype == 'float64':
-            if 'oran' in data.iloc[:,col].name or 'rate' in data.iloc[:,col].name or 'Oran' in data.iloc[:,col].name or 'percent' in data.iloc[:,col].name:
+            if 'RATE' in data.iloc[:,col].name or 'rate' in data.iloc[:,col].name or 'Rate' in data.iloc[:,col].name or 'percent' in data.iloc[:,col].name or 'Percent' in data.iloc[:,col].name:
                 for i in range(2,max_row+1):
                     _cell = ws.cell(row = i, column=col+1)
                     _cell.number_format = '0.00%'
